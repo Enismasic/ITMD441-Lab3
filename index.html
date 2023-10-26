@@ -8,13 +8,20 @@
 </head>
 <body>
     <h1 id="header"><strong>Tip Calculator</strong></h1>
-    <label for="billtotal">Bill Total: </label>
-    <div class="slider">
-        <p>Tip:</p>
-        <input type="range" min="1" max="100" value="20">
+    <form id="form">
+        <label for="billtotal">Bill Total: </label>
+        <input type="text" id="billtotal" name="billtotal"><br>
+        <div class="slider">
+            <label for="Tip">Tip: </label>
+            <input type="range" min="1" max="100" value="20">
+            </div>
+        <label for="Tip Percentage">Tip Percentage: </label>
+        <input type="text" id="tip-percent" name="tip-percent" disabled><br>
+        <label for="Tip Amount">Tip Amount: </label>
+        <input type="text" id="tip-amount" name="tip-amount" disabled><br>
+        <label for="Total Bill WithTip">Total Bill With Tip: </label>
+        <input type="text" id="total-bill-tip" name="total-bill-tip" disabled><br>
+    </form>
 
-
-
-    
 </body>
 </html>
