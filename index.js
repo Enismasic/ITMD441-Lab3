@@ -20,6 +20,10 @@ function calculateResults() {
 
 }
 
+    //Event Listeners for bill total and slider 
+    billTototalInput.addEventListener('input', calculateResults);
+    tipSlider.addEventListener('input', calculateResults);
 
-
-}
+    //calculation
+    calculateResults();
+});
