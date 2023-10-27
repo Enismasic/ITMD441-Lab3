@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
+    <link rel='stylesheet' href='./style.css'>
+    <script src="index.js"></script>
 </head>
 <body>
+    <p>ITMD 441-Lab 3-Enis Masic</p>
     <h1 id="header"><strong>Tip Calculator</strong></h1>
     <form id="form">
         <label for="billtotal">Bill Total: </label>
         <input type="text" id="billtotal" name="billtotal"><br>
         <div class="slider">
-            <label for="Tip">Tip: </label>
-            <input type="range" min="1" max="100" value="20">
-            </div>
-        <label for="Tip Percentage">Tip Percentage: </label>
+            <label for="tip-slider">Tip: </label>
+            <input type="range" min="1" max="100" value="20" id="tip-slider">
+        </div>
+        <label for="tip-percent">Tip Percentage: </label>
         <input type="text" id="tip-percent" name="tip-percent" disabled><br>
-        <label for="Tip Amount">Tip Amount: </label>
+        <label for="tip-amount">Tip Amount: </label>
         <input type="text" id="tip-amount" name="tip-amount" disabled><br>
-        <label for="Total Bill WithTip">Total Bill With Tip: </label>
-        <input type="text" id="total-bill-tip" name="total-bill-tip" disabled><br>
+        <label for="total-bill-tip">Total Bill With Tip: </label>
+        <input type="text" id="total-bill-tip" name="total-bill-tip" disabled><br>        
     </form>
-
 </body>
 </html>
