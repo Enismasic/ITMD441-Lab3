@@ -7,5 +7,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const tipAmountInput = document.getElementById('tip-amount');
     const totalBillWithTipInput = document.getElementById('total-bill-tip');
 
+    //Functionality to calculate and update results
+function calculateResults() {
+    const billtotal = parseFloat(billTototalInput.value)
+    const tipPercentage = parseInt(tipSlider.value);
+    const tipAmount = (billTotal * tipPercentage) / 100;
+    const totalBillWithTip = billtotal + tipAmount;
+
+    tipPercentInput.value = tipPercentage + '%';
+    tipAmountInput.value = '$' + tipAmount.toFixed(2);
+    totalBillWithTipInput.value = '$' + totalBillWithTip.toFixed(2);
+
+}
+
+
 
 }
