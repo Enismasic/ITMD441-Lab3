@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         tipPercentInput.value = tipPercentage + '%';
         tipAmountInput.value = '$' + tipAmount.toFixed(2);
         totalBillWithTipInput.value = '$' + totalBillWithTip.toFixed(2);
+
     }
 
      //Event Listeners for bill total and slider
